@@ -9,22 +9,48 @@ public class UserEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "Ho")
-    private String ho;
-
     @Column(name = "Ten")
-    private String ten;
+    private String name;
 
     @Column(name = "Email")
     private String email;
 
     @Column(name = "Matkhau")
-    private String matkhau;
+    private String password;
 
-    @Column(name = "Sodienthoai")
-    private String sodienthoai;
+    public UserEntity() {
 
-    @Column(name = "Diachi")
-    private String diachi;
+    }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
